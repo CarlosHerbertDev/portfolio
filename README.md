@@ -33,4 +33,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Esse é o projeto portfolio!
 
-- [Acesse o projeto finalizado, online](https://carlosherbertdev.github.io/)
+- [Acesse o projeto finalizado, online](https://carlosherbertdev.github.io/portfolio/)
