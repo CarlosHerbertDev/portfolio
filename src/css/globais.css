@@ -3,13 +3,13 @@
 
 html {
     font-size: 62.5%;
-    color: var(--cor-branca);
-    font-weight: 300;
+    color: var(--text-color);
+    font-weight: 400;
     scroll-behavior: smooth;
   }
   
   body {
-    background-color: var(--cor-fundo-cinza-escuro);
+    background-color: var(--cor-fundo-page);
     font-family: var(--fonte-primaria);
     font-size: var(--fonte-normal);
   }
@@ -27,7 +27,7 @@ html {
   .justify-content-between {
     justify-content: space-between;
   }
-  
+
   .alinhar-itens-no-centro {
     align-items: center;
   }
@@ -36,10 +36,10 @@ html {
     display: inline-block;
     width: 40px;
     height: 40px;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     text-align: center;
-    color: var(--cor-branca);
-    margin: 0 4px;
+    color: var(--cor-icon);
+    margin: 0;
     border-radius: 50%;
     transition: all 0.3s ease;
   }
@@ -49,7 +49,7 @@ html {
   }
   
   .redes-sociais a:hover {
-    color: var(--cor-primaria);
+    opacity: var(--hover-opacity);
   }
   
   .outer-shadow {
@@ -78,14 +78,17 @@ html {
   }
   
   .botao {
-    font-size: var(--fonte-grande);
+    font-size: var(--fonte-normal);
+    color: var(--text-color);
+    text-transform: uppercase;
     padding: 10px 20px;
-    border-radius: 20px;
+    border: 1px solid;
+    border-radius: 10px;
     transition: all .3s ease;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-fundo-botao);
   }
   
   .botao:hover {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-branca);
+    background-color: var(--cor-hover-botao);
+    color: var(--cor-hover-text);
   }

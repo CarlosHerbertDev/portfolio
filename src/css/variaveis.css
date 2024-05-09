@@ -1,21 +1,56 @@
 :root {
-    --cor-primaria: #43bd8e;
-    --cor-secundaria: #FD6C22;    
-    --cor-branca: #fff;
-    --cor-fundo-escuro: #040203;    
-    --cor-fundo-cinza-escuro: #282828;
-    --cor-fundo-cinza-claro: #353535;    
-  }
+
+  --cor-fundo-header-footer: #282828;    
+  --cor-fundo-page: #111111;
+  --text-color: #fff;
+  --hover-opacity: 0.4;
+  --fundo-logo: #282828;
+  --borda-logo: #fffafa;
+  --cor-menu-hamburguer: #fff;
+  --cor-fundo-nav: #000;
+  --cor-icon: #fff;
+  --cor-fundo-botao: #111111;
+  --cor-borda-botao: #fff;
+  --cor-hover-botao: #fff;
+  --cor-hover-text: #000;
+  --cor-borda-hab: #fff;
+  --cor-fundo-hab-hover: #fff;
+  --cor-botao-slide: #fff;
+  --surface-color:#373737;
+  --switch-br-url: url(../imagens/icons8-crescent-moon-20.png);
+}
     
-  :root {
+:root {
+  
     --fonte-primaria: 'Poppins', sans serif;
     --fonte-secundaria: 'Raleway', sans serif;
     --fonte-gigante: 4.5rem;
     --fonte-extra-grande: 3rem;
     --fonte-grande: 2.4rem;
     --fonte-normal: 1.6rem;
-  }
+}
   
   :root {
-    --mobile-padding: 30px;
+    --mobile-padding: 0px 30px;
+  }
+
+  .light {
+
+    --cor-fundo-header-footer: #d3d3d3;    
+    --cor-fundo-page: #fffafa ;
+    --text-color: #28292b ;
+    --fundo-logo: #fffafa;
+    --borda-logo: #282828;
+    --cor-menu-hamburguer: #000;
+    --cor-fundo-nav: #fff;
+    --cor-icon: #000;
+    --cor-fundo-botao: #fffafa;
+    --cor-borda-botao: #000;
+    --cor-hover-botao: #000;
+    --cor-hover-text: #fff;
+    --cor-borda-hab: #000;
+    --cor-fundo-hab-hover: #000;
+    --cor-botao-slide: #000;
+    --surface-color:#fff;
+    --switch-br-url: url(../imagens/icons8-sun-20.png);
   }

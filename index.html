@@ -1,49 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" class="">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ricardo Hofstetter Dias - Desenvolvedor Frontend</title>
-
-  <link rel="stylesheet" href="src/css/font-awesome.css" />
-  <link rel="stylesheet" href="src/css/reset.css" />
+  <title>Carlos Herbert Bento Vieira - Desenvolvedor Frontend</title>
+  <link rel="shortcut icon" href="./src/imagens/icons8-circled-h-17.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/css/font-awesome.css" />
+  <link rel="stylesheet" href="./src/css/reset.css" />
   
-  <!-- Global -->
-  <link rel="stylesheet" href="src/css/globais.css" />
-  <link rel="stylesheet" href="src/css/variaveis.css" />
-  <link rel="stylesheet" href="src/css/secoes/header.css" />
-  <link rel="stylesheet" href="src/css/secoes/home.css" />
-  <link rel="stylesheet" href="src/css/secoes/sobre.css" />
-  <link rel="stylesheet" href="src/css/secoes/habilidades.css" />
-  <link rel="stylesheet" href="src/css/secoes/projetos.css" />
-  <link rel="stylesheet" href="src/css/secoes/footer.css" />
+  <link rel="stylesheet" href="./src/css/globais.css" />
+  <link rel="stylesheet" href="./src/css/variaveis.css" />
+  <link rel="stylesheet" href="./src/css/dark-light.css">
+  <link rel="stylesheet" href="./src/css/secoes/header.css" />
+  <link rel="stylesheet" href="./src/css/secoes/home.css" />
+  <link rel="stylesheet" href="./src/css/secoes/sobre.css" />
+  <link rel="stylesheet" href="./src/css/secoes/formacao.css" />
+  <link rel="stylesheet" href="./src/css/secoes/habilidades.css" />
+  <link rel="stylesheet" href="./src/css/secoes/projetos.css">
+  <link rel="stylesheet" href="./src/css/secoes/footer.css" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container-header">
       <div class="row justify-content-between alinhar-itens-no-centro">
-        <a href="#">
-          <h1 class="logo">RD</h1>
-        </a>
-        <nav>
-          <input id="menu-hamburguer" type="checkbox" />
+          <a href="#" class="logo">
+            <img src="./src/imagens/logo-dark.png" alt="imagem logo">
+          </a>
+      </div>
+    <nav>
+      <input id="menu-hamburguer" type="checkbox" />
 
-          <label for="menu-hamburguer">
-            <div class="menu">
-              <span class="hamburguer"></span>
-            </div>
-          </label>
-          <ul>
-            <li><a href="#sobre-mim">Sobre mim</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projetos">Meus projetos</a></li>
-          </ul>
-        </nav>
+      <label for="menu-hamburguer">
+        <div class="menu">
+          <span class="hamburguer"></span>
+        </div>
+      </label>
+      <ul>
+        <li><a href="#sobre-mim">Sobre mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Meus projetos</a></li>
+      </ul>
+    </nav>
+      <div class="profile">
+        <div class="switch" onclick="toggleMode()">
+          <button></button>
+          <span></span>
+        </div> 
       </div>
     </div>
   </header>
@@ -52,21 +60,21 @@
     <div class="container">
       <div class="row full-screen alinhar-itens-no-centro">
         <div class="texto-home">
-          <p>Olá 🖖,</p>
-          <h1>Sou o Ricardo Dias</h1>
-          <h2>Desenvolvedor Frontend</h2>
+          <p>Olá, bem-vindo👋,</p>
+          <h1>Sou o Carlos Herbert</h1>
+          <h2>Desenvolvedor Fullstack</h2>
 
           <div class="redes-sociais">
-            <a href="#" class="outer-shadow"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="outer-shadow"><i class="fab fa-github"></i></a>
-            <a href="#" class="outer-shadow"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/herbert-vieira-030325225/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://wa.me/5585997517048?text=Oi!%20Vim%20pelo%20seu%20portfolio!" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/CarlosHerbertDev" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:hrbrtvieira@gmail.com"><i class="far fa-envelope"></i></a>
           </div>
         </div>
 
         <div class="img-home">
-          <div class="img-box inner-shadow">
-            <img class="outer-shadow" src="src/imagens/foto-perfil.png" alt="foto do perfil do Ricardo" />
+          <div class="img-box">
+            <img src="./src/imagens/foto-perfil.png" alt="foto do perfil do Herbert" />
           </div>
         </div>
       </div>
@@ -76,43 +84,111 @@
     <div class="container">
       <div class="row">
         <div class="section-title">
-          <h2>Sobre mim</h2>
+          <h2>Sobre mim 🙋‍♂️</h2>
         </div>
       </div>
       <div class="row">
         <div class="imagem-sobre-mim">
-          <div class="img-box inner-shadow">
-            <img src="src/imagens/foto-perfil.png" alt="foto sobre mim" class="outer-shadow" />
-          </div>
+            <img src="./src/imagens/foto-perfil2.jpg" alt="foto sobre mim" class="outer-shadow" />
         </div>
         <div class="informacoes-sobre-mim">
           <p>
-            <strong>Olá! Me chamo Ricardo Dias e sou um desenvolvedor frontend em
+            <strong>Olá mundo! Me chamo Carlos Herbert e sou um desenvolvedor fullstack em
               formação!</strong>
-              Gosto MUITO da área de tecnologia, e tenho certeza que posso contribuir em qualquer time com as minhas habilidades.
-          </p>
-
-          <p>
-           Estou sempre me desafiando coim novos projetos e participando de comunidades de programação para buscar feedback de outros desenvolvedores e desenvolvedoras. Além de tentar ajudar essas pessoas com o que eu já aprendi. 😁
-          </p>
-
-          <p>
-            Ah, gosto de jogos, filmes, séries, animes e outras nerdices. 💜
-          </p>
-
-          <div class="botoes">
-            <a target="_blank" href="/src/arquivos/cv.pdf" class="botao outer-shadow">Veja meu CV</a>
+              Apaixonado por tecnologia, com bastante interesse e vontade para aprender coisas novas, busco sempre me atualizar aprendendo novas tecnologias! Sou bastante comunicativo e esforçado, prezo muito pelo trabalho em equipe! 💡
+            </p>
+            
+            <p>
+              Iniciei o estudo do desenvolvimento Full-Stack onde estou aprendendo mais sobe tecnologias sobre React, Js, Node Js e Typescript, onde desejo aprender cada dia mais e aprender com os melhores! 🚀
+            </p>
+            <div class="botoes">
+              <a target="_blank" href="./src/arquivos/Carlos Herbert Bento Vieira.pdf" class="botao">Curriculo</a>
+            </div>
           </div>
         </div>
-      </div>
     </div>
   </section>
 
+  <section class="formacao section" id="formacao">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>formação 📚</h2>
+        </div>
+      </div>
+      
+    <div class="info">    
+      <div class="row">
+        <div class="imagem-formacao">
+          <img src="./src/imagens/estacio.jpg" alt="foto estacio"/>
+        </div>
+        <div class="informacoes-formacao">
+          <h3> Estácio </h3>
+          <p>
+            Após concluir meu ensino médio com curso de redes em computadores e trabalhado algum tempo na área, decidi migrar para o ramo da progamação e entáo iniciei a graduação tecnológica em Analine e Desenvolvimento de Sistemas iniciada em 03/2022 e com previsão para formação em 12/2024
+          </p>
+          <h3> GRADE </h3>
+          <p>
+            Desenvolvimento Web, Mobile, Python, C#, JAVA, Banco de Dados, Algoritimos, Sistemas Operacionais, Redes e Etc...
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="imagem-formacao">
+          <img src="./src/imagens/devquest.jpg" alt="foto devquest"/>
+        </div>
+        <div class="informacoes-formacao">
+          <h3> Dev em Dobro </h3>
+          <p>
+            Com o intuito de aprimorar meus conheciomentos e me tornar um desenvolvedor fullstack iniciei o curso Fullstack DevQuest do Dev em Dobro, iniciado em 02/2024 e ainda em andamento
+          </p>
+          <p>
+            <h3> GRADE </h3>
+            <p>
+              HTML, CSS, JS, Node JS, Typescript, React, Jest, Redux, API Rest, Git, Github, PostgreSQL, Marketing Pessoal
+            </p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="imagem-formacao ">
+            <img src="./src/imagens/rocketseat.jpg" alt="foto rocketseat"/>
+          </div>
+          <div class="informacoes-formacao">
+            <h3> Rocketseat </h3>
+            <p>
+                Curso Dicover pela Rocketseat, iniciado em 11/2023 e finalizado em 01/2024
+            </p>
+            <h3> GRADE </h3>
+            <p>
+              HTML, CSS, JS, GIT, GITHUB
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="imagem-formacao info">
+            <img src="./src/imagens/udemy.jpg" alt="foto udemy"/>
+          </div>
+          <div class="informacoes-formacao ">
+            <h3> Udemy </h3>
+            <p>
+              Com a vastidão de cursos ofertados pela a udemy, decidi fazer o curso de Desenvolvimento Web moderno da Cod3r, iciando em 03/2023 e que ainda está em andamento
+            </p>
+            <h3> GRADE </h3>
+            <p>
+              HTMLS, CSS, JS, Ajax, Angular 9, React, Node JS, Express, Gulp, Webpack, JQuery, VueJS, Bootstrap 
+            </p>
+            </div>
+          </div>
+        </div>
+    </div> 
+  </section>
   <section class="habilidades section" id="habilidades">
     <div class="container">
       <div class="row">
         <div class="section-title">
-          <h2>Habilidades</h2>
+          <h2>Habilidades 🛠️</h2>
         </div>
       </div>
 
@@ -122,9 +198,7 @@
             <i class="devicon devicon-javascript-plain" id="javascript"></i>
           </div>
           <h3>JavaScript</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
+          <p> Tenho uma boa base em JavaScript, entendo de conceitos como Array, Object, Function, arrow function, If e Else, callbacks, promisdes  </p>
         </div>
 
         <div class="informacoes html">
@@ -132,9 +206,7 @@
             <i class="devicon devicon-html5-plain-wordmark" id="html"></i>
           </div>
           <h3>HTML5</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
+          <p>No HTML, tenho conhecimentos em semântica, elementos, atributos e formulários</p>
         </div>
 
         <div class="informacoes css">
@@ -142,9 +214,7 @@
             <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
           </div>
           <h3>CSS3</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
+          <p>No CSS, tenho conhecimentosnas áres de responsividade (media queries), herança, especificidade, Flex, Grid, cascata </p>
         </div>
 
         <div class="informacoes github">
@@ -152,9 +222,7 @@
             <i class="devicon devicon-github-original" id="github"></i>
           </div>
           <h3>GitHub</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
+          <p>Com Github tive aprendizado em controle de repósitorios, versionar e controlar alterações em projetos, colaboração com projetos de código abertos hospedados no Github, configuração e utilização do Github Pages</p>
         </div>
 
         <div class="informacoes git">
@@ -162,9 +230,7 @@
             <i class="devicon devicon-git-plain" id="git"></i>
           </div>
           <h3>Git</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
+          <p>Com Git adiquiri conhecimentos como controle de cersão, criação e gerenciamento de repósitorios além de poder clonar ele também</p>
         </div>
       </div>
     </div>
@@ -174,69 +240,122 @@
     <div class="container">
       <div class="row">
         <div class="section-title">
-          <h2>Meus projetos</h2>
+          <h2>Meus projetos 🖥️</h2>
         </div>
       </div>
 
-      <div class="container-projetos">
-        <div class="projeto">        
-          <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 1</h3>
-            <div class="informacoes-projeto">          
-              <p>Projeto feito usando HTML, CSS e JavaScript</p>
-              <p>🔗 Ver no GitHub Pages</p>
-            </div>     
-          </a>
-        </div>
-
-        <div class="projeto">        
-          <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 2</h3>
-            <div class="informacoes-projeto">          
-              <p>Lorem ipsum</p>
-              <p>🔗 Ver no GitHub Pages</p>
-            </div>      
-          </a>          
-        </div>
-
-        <div class="projeto">     
-          <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 3</h3>
-            <div class="informacoes-projeto">
-              <p>Lorem ipsum</p>
-              <p>🔗 Ver no GitHub Pages</p>
+      <div class="slider">
+        <div class="slides">
+            <input type="radio" checked name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <div class="slide first">        
+                <div class="projeto">     
+                <a href="https://github.com" target="_blank">
+                    <img src="./src/imagens/gtasite.jpg" alt="Gta clone Site">
+                    <div class="informacoes-projeto">
+                        <h3>Site GTA Clone</h3>
+                        <p>Clone do site do GTA, usando HTML, CSS, Javascript de forma responsiva </p>
+                        <div class="botoes-slide">
+                          <a href="https://carlosherbertdev.github.io/projeto-gta/" target="_blank"><button>Projeto</button></a>
+                          <a href="https://github.com/CarlosHerbertDev/projeto-gta" target="_blank"><button>Repositório</button></a>
+                        </div>
+                    </div>
+                </a>   
             </div>
-          </a>   
         </div>
-
-        <div class="projeto">
-          <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 4</h3>
-            <div class="informacoes-projeto">
-              <p>Lorem ipsum</p>
-              <p>🔗 Ver no GitHub Pages</p>
+    
+        <div class="slide">
+            <div class="projeto">     
+                <a href="https://github.com" target="_blank">
+                    <img src="./src/imagens/projeto-portifolio.jpg" alt="Projeto Mini Portifolio">
+                    <div class="informacoes-projeto">
+                        <h3>Projeto Mini Portfolio</h3>
+                        <p>Mini portfolio usando HTML, CSS e JavaScript, usando responsividade modo dark e light</p>
+                        <div class="botoes-slide">
+                          <a href="https://carlosherbertdev.github.io/Projeto-Portifolio/" target="_blank"><button>Projeto</button></a>
+                          <a href="https://github.com/CarlosHerbertDev/Projeto-Portifolio" target="_blank"><button>Repositório</button></a>
+                        </div>
+                    </div>
+                </a>   
             </div>
-          </a>
         </div>
+    
+        <div class="slide">
+            <div class="projeto">     
+                    <img src="./src/imagens/recipepage.jpg" alt="Recipe Page">
+                    <div class="informacoes-projeto">
+                        <h3>Recipe Page</h3>
+                        <p>Desafio do Fontend Mentor, página responsiva usando HTML e CSS</p>
+                        <div class="botoes-slide">
+                          <a href="https://carlosherbertdev.github.io/recipe-page/" target="_blank"><button>Projeto</button></a>
+                          <a href="https://github.com/CarlosHerbertDev/recipe-page" target="_blank"><button>Repositório</button></a>
+                        </div>
+                    </div> 
+            </div>
+        </div>
+        <div class="slide">
+            <div class="projeto">     
+                    <img src="./src/imagens/huddle.jpg" alt="Huddle Page">
+                    <div class="informacoes-projeto">
+                        <h3>Huddle Leanding Page</h3>
+                        <p>Desafio do Frontend Mentor, página huddle responsiva usando HTML e CSS</p>
+                        <div class="botoes-slide">
+                          <a href="https://carlosherbertdev.github.io/huddle-leanding-page/" target="_blank"><button>Projeto</button></a>
+                          <a href="https://github.com/CarlosHerbertDev/huddle-leanding-page" target="_blank"><button>Repositório</button></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="slide">
+          <div class="projeto">     
+                  <img src="./src/imagens/agencia.jpg" alt="Agencia xyz">
+                  <div class="informacoes-projeto">
+                      <h3>Agência XYZ</h3>
+                      <p>A Agência XYZ simula uma leanding page responsiva de uma agência, usando Grid e Flex, além de um menu "hamburguer" na versão mobile</p>
+                      <div class="botoes-slide">
+                          <a href="https://carlosherbertdev.github.io/leanding-page-flexegrid/" target="_blank"><button>Projeto</button></a>
+                          <a href="https://github.com/CarlosHerbertDev/leanding-page-flexegrid?tab=readme-ov-file" target="_blank"><button>Repositório</button></a>
+                      </div>
+                  </div>
+          </div>
       </div>
+    <div class="navegation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+        <div class="auto-btn5"></div>
+    </div>
+    </div>
+        <div class="manual-navegation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
+    </div>
     </div>
   </section>
-
   <footer class="footer">
     <div class="container">
       <h2>Me envie uma mensagem!</h2>
       <div class="redes-sociais">
-        <a href="#" class="outer-shadow"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" class="outer-shadow"><i class="fab fa-github"></i></a>
-        <a href="#" class="outer-shadow"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/herbert-vieira-030325225/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/5585997517048?text=Oi!%20Vim%20pelo%20seu%20portfolio!" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/CarlosHerbertDev" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:hrbrtvieira@gmail.com"><i class="far fa-envelope"></i></a>
       </div>
+        <div class="local">
+          <h2>local</h2>
+          <p>Itaitinga - CE</p>
+        </div>
     </div>
   </footer>
+  <script src="./src/js/dark-light.js"></script>
 </body>
 
 </html>

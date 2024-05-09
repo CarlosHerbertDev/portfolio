@@ -1,12 +1,16 @@
-/* FOOTER */
 .footer {
     margin-top: 7rem;
     text-align: center;
-    background-color: var(--cor-fundo-cinza-claro);
+    background-color: var(--cor-fundo-header-footer);
 }
 
 .footer .container {
-    padding: 5rem 0;
+    padding: 2rem 0;
+    
+}
+
+.footer .container h2 {
+    text-transform: uppercase;
 }
 
 .footer h2 {
@@ -15,4 +19,8 @@
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 20px;
+}
+
+.container .local {
+    margin-top: 20px;
 }

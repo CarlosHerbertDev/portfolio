@@ -1,10 +1,10 @@
-/* HABILIDADES */
 .habilidades .container-habilidades {    
     text-align: center;    
     display: flex;
     justify-content: center;    
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 .habilidades .container-habilidades .informacoes{
@@ -12,6 +12,7 @@
     padding: 40px 20px;    
 }
 
+.habilidades .container-habilidades .informacoes,
 .habilidades .container-habilidades .informacoes p,
 .habilidades .container-habilidades .informacoes h3,
 .habilidades .container-habilidades .informacoes .logo i{
@@ -19,19 +20,20 @@
     -moz-transition: all .3s ease;
     -o-transition: all .3s ease;
     -webkit-transition: all .3s ease;
+
 }
 
 .habilidades .container-habilidades .informacoes:hover p,
 .habilidades .container-habilidades .informacoes:hover h3,
 .habilidades .container-habilidades .informacoes:hover .logo i{
-    color: var(--cor-primaria);
+    color: var(--cor-hover-text);
 }
 
 .habilidades .container-habilidades .informacoes h3 {
     font-size: var(--fonte-extra-grande);
     font-weight: 500;
     margin-bottom: 20px;
-    color: var(--cor-primaria);      
+    color: var();      
 }
 
 .habilidades .container-habilidades .informacoes p {
@@ -41,4 +43,13 @@
 
 .habilidades .container-habilidades .informacoes .logo i {
     font-size: 8rem;
+}
+
+.habilidades .container-habilidades .informacoes {
+    border: 2px solid var(--cor-borda-hab);
+    border-radius: 15px;
+}
+
+.habilidades .container-habilidades .informacoes:hover {
+    background-color: var( --cor-fundo-hab-hover);
 }
