@@ -130,7 +130,7 @@
     height: 100%;
     border-radius: 10px;
     opacity: 0;
-    background-color: #000;
+    background-color: #000; 
     transition: all .5s ease;
 }
 
@@ -159,6 +159,7 @@
 
 .informacoes-projeto p {
     margin-bottom: 60px;
+    max-width: 600px;
 }
 
 
