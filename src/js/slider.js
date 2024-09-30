@@ -1,0 +1,1 @@
+const teste = document.querySelector(".slider")
