@@ -3,13 +3,17 @@
     width: 700px;
     height: 100%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
     border-radius: 10px;
+    position: relative;
 }
 
 .slides {
-    width: 400%;
+    max-width: 400%;
     height: 100%;
     display: flex;
+    align-items: center;
 
 }
 
@@ -17,10 +21,52 @@
     display: none;
 }
 
+.opacity {
+    opacity: 0.4;
+}
+
+.not-opacity {
+    opacity: 0;
+}
+
+
+.arrows {
+    display: flex;
+    align-items: center;
+    opacity: 0.5s;
+    transition: 0.3s;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+    
+}
+
+.arrows a {
+    cursor: pointer;
+}
+
+.arrow img {
+    height: 30px;
+    max-width: 18px;
+}
+
+.arrow-right {
+    right: 2%;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+    left: 2%;
+}
+
+
+
+
 .slide {
-    width: 25%;
-    position: relative;
-    transition: 2s;
+    transition: 1.5s;
 }
 
 .slide img {
@@ -191,7 +237,7 @@
 }
 
 .projeto:hover::before,
-.projeto .informacoes-projeto:hover {
+.projeto .informacoes-projeto:hover{
     opacity: 0.8; 
 }
 
