@@ -1,4 +1,4 @@
-function toggleMode() {
+export function toggleMode() {
     const html = document.documentElement
     html.classList.toggle("light")
 
