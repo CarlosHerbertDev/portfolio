@@ -10,7 +10,7 @@
 }
 
 .slides {
-    max-width: 400%;
+    width: 400%;
     height: 100%;
     display: flex;
 }
@@ -151,17 +151,17 @@
     transition: 1s;
     }
     
-    .navegation-auto-mobile{
-        position: absolute;
-        width: 700px;
-        margin-top: 552px;
-        display: flex;
-        justify-content: center;
-        }
+.navegation-auto-mobile{
+    position: absolute;
+    width: 700px;
+    margin-top: 552px;
+    display: flex;
+    justify-content: center;
+}
         
-        .navegation-auto-mobile div:not(:last-child) {
-            margin-right: 20px;
-            }
+.navegation-auto-mobile div:not(:last-child) {
+    margin-right: 20px;
+}
 
 #radio1:checked ~ .navegation-auto-mobile .auto-btn1{
     background-color: var(--cor-botao-slide);
@@ -169,7 +169,7 @@
 #radio2:checked ~ .navegation-auto-mobile .auto-btn2{
     background-color: var(--cor-botao-slide);
 }
-#radio3:checked ~ .navegation-auto-mobile.auto-btn3{
+#radio3:checked ~ .navegation-auto-mobile .auto-btn3{
     background-color: var(--cor-botao-slide);
 }
 #radio4:checked ~ .navegation-auto-mobile .auto-btn4{
@@ -237,8 +237,6 @@
     text-decoration: none;
 }
 
-
-
 .botoes-slide {
     display: flex;
     gap: 10px;
@@ -293,16 +291,23 @@
         width: 600px;
     }
 
-    /* .navegation-auto{
+    .navegation-auto-mobile {
         width: 600px;
         margin-top: 478px;
-    } */
+    }
+    
+    .navegation-auto-mobile div:not(:last-child) {
+        margin-right: 20px;
+    }
+
+
+
     .navegation-auto-desktop{
         width: 600px;
         margin-top: 430px;
     }
     
-    .navegation-auto div:not(:last-child) {
+    .navegation-auto-desktop div:not(:last-child) {
         margin-right: 20px;
     }
 
@@ -342,10 +347,15 @@
         width: 500px;
     }
 
-    /* .navegation-auto{
+
+    .navegation-auto-mobile{
         width: 500px;
         margin-top: 402px;
-    } */
+    }
+    
+    .navegation-auto-mobile div:not(:last-child) {
+        margin-right: 20px;
+    }
     
     .navegation-auto-desktop{
         width: 500px;
@@ -429,7 +439,7 @@
         margin-top: 312px;
     }
 
-    .navegation-auto-mobile {
+    .manual-navegation {
         width: 380px;
         margin-top: 20px;
     }
@@ -455,7 +465,7 @@
         width: 350px;
     }
 
-    .navegation-auto-mobile{
+    .navegation-auto-mobile {
         width: 350px;
         margin-top: 289px;
     }
