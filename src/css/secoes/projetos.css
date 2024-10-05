@@ -19,6 +19,9 @@
     display: none;
 }
 
+.passing-slide {
+    margin-left: -25%;
+}
 
 
 .arrows {
@@ -42,13 +45,13 @@
 }
 
 .arrow-right {
-    right: 1%;
+    right: 1.5%;
 }
 
 .arrow-left {
     transform: rotate(180deg);
     top: 45.5%;
-    left: 1%;
+    left: 1.5%;
 }
 
 
@@ -107,7 +110,7 @@
     margin-left: -100%;
 }
 
-.navegation-auto div{
+.navegation-auto-desktop div{
     border: 1px solid white;
     padding: 4px;
     border-radius: 10px;
@@ -115,7 +118,7 @@
     transition: 1s;
 }
 
-.navegation-auto{
+.navegation-auto-desktop{
     position: absolute;
     width: 700px;
     margin-top: 500px;
@@ -124,7 +127,7 @@
     transition: 0.8s;
 }
 
-.navegation-auto div:not(:last-child) {
+.navegation-auto-desktop div:not(:last-child) {
     margin-right: 20px;
 }
 
@@ -132,15 +135,15 @@
     background-color: white;
 }
 
-.arrows, .navegation-auto div {
-    opacity: 0.5;
+.arrows, .navegation-auto-desktop div {
+    opacity: 0.7;
 }
 
 .not-opacity {
     opacity: 0;
 }
 
-/* .navegation-auto div{
+.navegation-auto-mobile div{
     border: 1px solid var(--cor-botao-slide);
     padding: 4px;
     border-radius: 10px;
@@ -148,7 +151,7 @@
     transition: 1s;
     }
     
-    .navegation-auto{
+    .navegation-auto-mobile{
         position: absolute;
         width: 700px;
         margin-top: 552px;
@@ -156,25 +159,25 @@
         justify-content: center;
         }
         
-        .navegation-auto div:not(:last-child) {
+        .navegation-auto-mobile div:not(:last-child) {
             margin-right: 20px;
             }
 
-#radio1:checked ~ .navegation-auto .auto-btn1{
+#radio1:checked ~ .navegation-auto-mobile .auto-btn1{
     background-color: var(--cor-botao-slide);
 }
-#radio2:checked ~ .navegation-auto .auto-btn2{
+#radio2:checked ~ .navegation-auto-mobile .auto-btn2{
     background-color: var(--cor-botao-slide);
 }
-#radio3:checked ~ .navegation-auto .auto-btn3{
+#radio3:checked ~ .navegation-auto-mobile.auto-btn3{
     background-color: var(--cor-botao-slide);
 }
-#radio4:checked ~ .navegation-auto .auto-btn4{
+#radio4:checked ~ .navegation-auto-mobile .auto-btn4{
     background-color: var(--cor-botao-slide);
 }
-#radio5:checked ~ .navegation-auto .auto-btn5{
+#radio5:checked ~ .navegation-auto-mobile .auto-btn5{
     background-color: var(--cor-botao-slide);
-} */
+}
 
 
 
@@ -257,8 +260,7 @@
 }
 
 .projeto:hover::before,
-.projeto .informacoes-projeto:hover
-{
+.projeto .informacoes-projeto:hover{
     opacity: 0.8; 
 }
 
@@ -279,14 +281,25 @@
     .informacoes-projeto {
         width: 600px;
     }
+    .informacoes-projeto h1, .informacoes-projeto p {
+        width: 500px;
+    }
+
+    .informacoes-projeto p {
+        margin-bottom: 50px;
+    }
 
     .projeto {
         width: 600px;
     }
 
-    .navegation-auto{
+    /* .navegation-auto{
         width: 600px;
         margin-top: 478px;
+    } */
+    .navegation-auto-desktop{
+        width: 600px;
+        margin-top: 430px;
     }
     
     .navegation-auto div:not(:last-child) {
@@ -317,16 +330,29 @@
         width: 500px;
     }
 
+    .informacoes-projeto h1, .informacoes-projeto p {
+        width: 400px;
+    }
+
+    .informacoes-projeto p {
+        margin-bottom: 30px;
+    }
+
     .projeto {
         width: 500px;
     }
 
-    .navegation-auto{
+    /* .navegation-auto{
         width: 500px;
         margin-top: 402px;
+    } */
+    
+    .navegation-auto-desktop{
+        width: 500px;
+        margin-top: 360px;
     }
     
-    .navegation-auto div:not(:last-child) {
+    .navegation-auto-desktop div:not(:last-child) {
         margin-right: 20px;
     }
 
@@ -349,20 +375,24 @@
         width: 450px;
     }
 
-    .arrow-left {
-        top: 43%;
+    .arrows {
+        display: none;
+    }
+
+    .navegation-auto-desktop {
+        display: none;
     }
 
     .projeto {
         width: 450px;
     }
 
-    .navegation-auto{
+    .navegation-auto-mobile{
         width: 450px;
         margin-top: 364px;
     }
     
-    .navegation-auto div:not(:last-child) {
+    .navegation-auto-mobile div:not(:last-child) {
         margin-right: 20px;
     }
 
@@ -394,12 +424,12 @@
         width: 380px;
     }
 
-    .navegation-auto{
+    .navegation-auto-mobile{
         width: 380px;
         margin-top: 312px;
     }
 
-    .manual-navegation {
+    .navegation-auto-mobile {
         width: 380px;
         margin-top: 20px;
     }
@@ -425,7 +455,7 @@
         width: 350px;
     }
 
-    .navegation-auto{
+    .navegation-auto-mobile{
         width: 350px;
         margin-top: 289px;
     }
