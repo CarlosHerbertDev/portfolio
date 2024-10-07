@@ -28,7 +28,6 @@ arrowRight.addEventListener('click', () => {
     if(index < slide.length - 1){
         slide[index].classList.add("passing-slide")
         markers[index + 1].classList.add('btn-select')
-       
         
     } 
     else if (index = slide.length - 1) {
@@ -48,7 +47,7 @@ arrowLeft.addEventListener('click', () => {
     markers[index].classList.remove('btn-select')
     
     
-     if(index < slide.length && index !== 0){
+    if(index < slide.length && index !== 0){
         slide[index - 1].classList.remove("passing-slide")
         markers[index - 1].classList.add('btn-select')
         

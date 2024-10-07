@@ -93,7 +93,7 @@
 .manual-btn:hover {
     background-color: var(--cor-botao-slide);
 }
-
+/* 
 #radio1:checked ~ .first{
     margin-left: 0;
 }
@@ -108,13 +108,12 @@
 }
 #radio5:checked ~ .first{
     margin-left: -100%;
-}
+} */
 
 .navegation-auto-desktop div{
     border: 1px solid white;
     padding: 4px;
     border-radius: 10px;
-    cursor: pointer;
     transition: 1s;
 }
 
@@ -179,7 +178,9 @@
     background-color: var(--cor-botao-slide);
 }
 
-
+.manual-navegation, .navegation-auto-mobile {
+    display: none;
+}
 
 .projeto {
     border-radius: 5px;
@@ -261,6 +262,9 @@
 .projeto .informacoes-projeto:hover{
     opacity: 0.8; 
 }
+
+
+
 
 
 @media(max-width: 700px) { 
@@ -395,6 +399,10 @@
 
     .projeto {
         width: 450px;
+    }
+
+    .manual-navegation, .navegation-auto-mobile{
+        display: block;
     }
 
     .navegation-auto-mobile{
