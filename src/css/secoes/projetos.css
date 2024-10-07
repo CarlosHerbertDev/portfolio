@@ -93,22 +93,6 @@
 .manual-btn:hover {
     background-color: var(--cor-botao-slide);
 }
-/* 
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-#radio4:checked ~ .first{
-    margin-left: -75%;
-}
-#radio5:checked ~ .first{
-    margin-left: -100%;
-} */
 
 .navegation-auto-desktop div{
     border: 1px solid white;
@@ -178,7 +162,7 @@
     background-color: var(--cor-botao-slide);
 }
 
-.manual-navegation, .navegation-auto-mobile {
+.manual-navegation label {
     display: none;
 }
 
@@ -295,14 +279,14 @@
         width: 600px;
     }
 
-    .navegation-auto-mobile {
+    /* .navegation-auto-mobile {
         width: 600px;
         margin-top: 478px;
     }
     
     .navegation-auto-mobile div:not(:last-child) {
         margin-right: 20px;
-    }
+    } */
 
 
 
@@ -315,10 +299,10 @@
         margin-right: 20px;
     }
 
-    .manual-navegation {
+    /* .manual-navegation {
         width: 600px;
         margin-top: 20px;
-    }
+    } */
 
 }
 
@@ -351,7 +335,7 @@
         width: 500px;
     }
 
-
+/* 
     .navegation-auto-mobile{
         width: 500px;
         margin-top: 402px;
@@ -359,7 +343,7 @@
     
     .navegation-auto-mobile div:not(:last-child) {
         margin-right: 20px;
-    }
+    } */
     
     .navegation-auto-desktop{
         width: 500px;
@@ -369,16 +353,18 @@
     .navegation-auto-desktop div:not(:last-child) {
         margin-right: 20px;
     }
-
+/* 
     .manual-navegation {
         width: 500px;
         margin-top: 20px;
-    }
+    } */
 }
 
 @media(max-width: 500px) { 
     .slider {
         width: 450px;
+        display: block;
+        position: static;
     }
 
     .slide img {
@@ -401,8 +387,8 @@
         width: 450px;
     }
 
-    .manual-navegation, .navegation-auto-mobile{
-        display: block;
+    .manual-navegation label{
+        display: inline;
     }
 
     .navegation-auto-mobile{
@@ -417,6 +403,22 @@
     .manual-navegation {
         width: 450px;
         margin-top: 20px;
+    }
+
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first{
+        margin-left: -25%;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -50%;
+    }
+    #radio4:checked ~ .first{
+        margin-left: -75%;
+    }
+    #radio5:checked ~ .first{
+        margin-left: -100%;
     }
 }
 
