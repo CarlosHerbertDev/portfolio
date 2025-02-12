@@ -6,10 +6,8 @@ function toggleMode() {
 
     if(html.classList.contains('light')) {
         img.setAttribute('src', "./src/imagens/logo-light.png")
-        img.setAttribute("alt", "Foto de Herbert, usando óculos e camisa de preta")
     } else {
         img.setAttribute("src", "./src/imagens/logo-dark.png")
-        img.setAttribute("alt", "Foto de Herbert, usando óculos e camisa de time")
     }
 }
 
